@@ -1,0 +1,139 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+// FONT VARIABLES
+$font-primary: "Archivo", sans-serif;
+$body-family: "Montserrat", sans-serif;
+
+// CUSTOM VARIABLES
+$label-weight: 700;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// html {
+//   box-sizing: border-box;
+//   //font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+// }
+
+body {
+  font-family: $body-family;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #dae4f0;
+}
+
+.hero {
+  h1 {
+    font-family: $font-primary;
+  }
+
+  h2 {
+    line-height: 5.6vh;
+  }
+
+  &__subtitle {
+    &__1 {
+      box-shadow: 0 10px 0 0 rgba(255, 56, 96, 0),
+        inset 0 -0.125em rgba(255, 56, 96, 0.2);
+
+      &:hover {
+        color: magenta;
+        font-weight: 700;
+        box-shadow: 0 1px 0 4px rgba(255, 56, 96, 0.1),
+          inset 0 -1.375em 0 rgba(255, 56, 96, 0.1);
+      }
+    }
+    &__2 {
+      box-shadow: 0 10px 0 0 rgba(72, 199, 116, 0),
+        inset 0 -0.125em rgba(72, 199, 116, 0.2);
+
+      &:hover {
+        color: #44c55e;
+        font-weight: 700;
+        box-shadow: 0 1px 0 4px rgba(72, 199, 116, 0.1),
+          inset 0 -1.375em 0 rgba(72, 199, 116, 0.1);
+      }
+    }
+    &__3 {
+      box-shadow: 0 10px 0 0 rgba(184, 107, 255, 0),
+        inset 0 -0.125em rgba(184, 107, 255, 0.2);
+
+      &:hover {
+        color: #3069c5;
+        font-weight: 700;
+        box-shadow: 0 1px 0 4px rgba(50, 115, 220, 0.1),
+          inset 0 -1.375em 0 rgba(50, 115, 220, 0.1);
+      }
+    }
+    &__4 {
+      box-shadow: 0 10px 0 0 rgba(50, 115, 220, 0),
+        inset 0 -0.125em rgba(50, 115, 220, 0.2);
+
+      &:hover {
+        color: #ab5af6;
+        font-weight: 700;
+        box-shadow: 0 1px 0 4px rgba(184, 107, 255, 0.1),
+          inset 0 -1.375em 0 rgba(184, 107, 255, 0.1);
+      }
+    }
+    &__5 {
+      letter-spacing: 0.2em;
+
+      box-shadow: 0 10px 0 0 rgba(247, 231, 17, 0),
+        inset 0 -0.125em rgba(247, 231, 17, 0.2);
+
+      &:hover {
+        color: darkgoldenrod;
+        font-weight: 700;
+        box-shadow: 0 1px 0 4px rgba(255, 231, 17, 0.1),
+          inset 0 -1.375em 0 rgba(255, 231, 17, 0.1);
+      }
+    }
+  }
+}
+.converter {
+  &__value1 {
+    button {
+      margin-left: 8px;
+    }
+  }
+
+  &__value2 {
+    margin-top: 5.6vh;
+    button {
+      margin-left: 8px;
+    }
+  }
+
+  option,
+  select {
+    font-weight: $label-weight;
+  }
+}
+.footer {
+  // margin-top: 1.6em;
+  background-color: #dae4f0;
+
+  &__sharethis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__content,
+  &__share {
+    font-size: 0.75em;
+  }
+
+  &__icon,
+  &__label {
+    font-size: 13px;
+  }
+}
