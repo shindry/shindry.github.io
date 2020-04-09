@@ -3177,7 +3177,7 @@ a.tag:hover {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 3rem 1.5rem 0; }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
